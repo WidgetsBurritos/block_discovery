@@ -1,0 +1,6 @@
+services:
+  block_discovery.manager:
+    class: Drupal\block_discovery\Plugin\Block\DiscoverableBlockManager
+    arguments: ['@container.namespaces', '@cache.discovery', '@module_handler', '@theme_handler']
+    tags:
+      - { name: plugin_manager_cache_clear }

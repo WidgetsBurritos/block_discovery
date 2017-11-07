@@ -1,0 +1,5 @@
+name: Block Discovery
+type: module
+description: 'Module for discovering blocks via yml files.'
+package: Block Discovery
+core: 8.x

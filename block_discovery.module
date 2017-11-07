@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Functions for block_discovery module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function block_discovery_theme() {
+  return \Drupal::service('block_discovery.manager')->getThemeImplementations();
+}
